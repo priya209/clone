@@ -1,0 +1,296 @@
+*{
+     margin:0;
+     padding: 0;
+     font-family:'Poppins', sans-serif;
+     box-sizing: border-box;   
+}
+
+body
+{
+    background:black;
+    color: #fff;
+
+}
+
+hr{
+    background: gray;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    border: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    padding-right: 120px;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding-top: 10px 15px;
+
+}
+
+
+
+.logo{
+    
+    width:150px;
+    cursor:pointer;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    padding: 5px 40px;
+}
+
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 5px;
+}
+.language-btn img{
+    width:20%;
+    height: 20%;
+    padding-left: 5px;
+    
+}
+
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height:70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.email-signup input{
+    flex:1;
+    border:0;
+    outline:0;
+    padding-left: 10px;
+    
+}
+
+.email-signup button{
+    height: 100%;
+    background-color: #db0001;
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 30px;
+
+    
+}
+
+.features{
+    padding: 50px 50px;
+    font-size: 22px;   
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+   
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-left: 60px;
+
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    width:80%;
+    margin: auto;
+}
+
+.faq{
+    padding:10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.accordian{
+    margin:60px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+display: flex;
+align-items: center;
+padding: 20px;
+font-size: 18px;
+font-weight: 500;
+background: #303030;
+margin-bottom: 2px;
+cursor: pointer;
+position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position:absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(140deg);
+}
+
+.faq small{
+    font-size: 13px;
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+
+
+.footer{
+    padding: 15px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px ;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;  
+}
+
+.footer .col a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:rgb(179, 171, 171); 
+
+}
+
+.footer .row{
+    align-items: flex-start;
+    pad: 10px 0;
+}
+
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
